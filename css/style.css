@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+    overflow: hidden;
+}
+
+.nav-header {
+    background-color: #000;
+    height: 45px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.nav-list>li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-list .header-Idown {
+    font-size: 10px;
+    position: absolute;
+    top: 19px;
+    right: 13px;
+    color: #fff;
+}
+
+.nav-list a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    line-height: 45px;
+    padding: 0 24px;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.nav-list a:hover .header-Idown {
+    color: #000;
+}
+
+.nav-list a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.nav-list>li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    top: 45px;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0 0 10px #d3d3d3;
+    z-index: 10;
+    display: none;
+}
+
+.sub-menu>li>a {
+    color: #000;
+    text-decoration: none;
+    padding-left: 12px;
+}
+
+.btn-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #FFFEFE;
+    width: 64px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-search:hover {
+    background-color: #F44336;
+}
+
+.slider-bar {
+    position: relative;
+    transition: all 0.3s linear;
+    top: 45px;
+}
+
+.slider-bar img {
+    width: 100%;
+    background-position: cover;
+}
+
+.slider-heading {
+    color: #fff;
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: block;
+    font-size: 16px;
+}
+
+.slider-heading h3 {
+    text-transform: capitalize;
+}
+
+.main-band {
+    margin: 64px auto;
+    max-width: 800px;
+}
+
+.main-band h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main-band h6 {
+    font-style: oblique;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.6;
+    padding: 10px 0;
+}
+
+.main-band p {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.card-band {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 32px 0;
+}
+
+.card-band h4 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 20px 0 10px 0;
+}
+
+.card-band img {
+    width: 60%;
+    border-radius: 5px;
+}
+
+
+/* tour band */
+
+.bg-black {
+    background-color: #000;
+}
+
+.shows,
+.contact {
+    max-width: 800px;
+    align-items: center;
+}
+
+.tour-band {
+    margin-top: 80px;
+}
+
+.tour-band h1 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.tour-band>div {
+    color: #888888;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    margin: 10px 0 20px 0;
+}
+
+.book {
+    background-color: #fff;
+    padding: 0;
+    margin-bottom: 38px;
+}
+
+.book>li {
+    display: block;
+    padding: 8px 16px;
+    border: 1px solid #DDDDDD;
+    font-size: 15px;
+    color: #757575;
+    position: relative;
+}
+
+.book>li>span {
+    background-color: #F44336;
+    color: #fff;
+    padding: 3px 12px;
+    margin-left: 12px;
+    font-size: 15px;
+}
+
+.book>li>button {
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    float: right;
+}
+
+
+/* cart-ticket */
+
+.card-ticket {
+    background-color: #fff;
+    padding: 0;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.card-ticket h6 {
+    padding: 15px 0 0 15px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+
+.card-ticket p {
+    padding: 5px 0 0 15px;
+    font-size: 15px;
+}
+
+.show-day {
+    color: #666666;
+}
+
+.card-ticket button {
+    margin: 0 0 15px 15px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+}
+
+.card-ticket button:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.warp-card {
+    margin: 0 -30px;
+    margin-bottom: 50px;
+}
+
+
+/* contact */
+
+.contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact .heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    letter-spacing: 4px;
+    line-height: 30px;
+    padding-bottom: 16px;
+}
+
+.contact p {
+    opacity: 0.6;
+    color: #000;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contact-item {
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-item span {
+    padding-left: 12px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.form-contact {
+    margin: 0 -30px;
+}
+
+.form-contact input {
+    border: 1px solid #ccc;
+    height: 32px;
+    padding: 0 12px 0 12px;
+    margin-bottom: 16px;
+}
+
+.form-contact input::placeholder {
+    background-color: transparent;
+    line-height: 24px;
+}
+
+.warp-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-contact input[type="message"] {
+    width: 100%;
+}
+
+.btn-send {
+    float: right;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+.btn-send:hover {
+    color: #000;
+    background-color: #ddd;
+}
+
+
+/* gooogle -map */
+
+.wrap-icon {
+    align-items: center;
+    text-align: center;
+    margin: 80px auto;
+}
+
+.bg-gray {
+    background-color: #F7F7F7;
+}
+
+footer {
+    margin-top: 16px;
+    opacity: 0.6;
+    font-size: 15;
+}
+
+footer>i {
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.footer-icon i {
+    font-size: 22px;
+}
+
+.footer-icon i:hover {
+    opacity: 0.6;
+}
+
+#bar-menu {
+    display: none;
+    text-align: center;
+    line-height: 46px;
+}
+
+
+/* form-pay */
+
+.form-pay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.box {
+    background-color: #fff;
+    padding-bottom: 16px;
+    position: relative;
+    max-width: 1130px;
+    transition: all 0.3s ease-in;
+    animation: showForm 0.3s ease-in;
+    opacity: 1;
+    transform: translateY(30%);
+}
+
+@keyframes showForm {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(25%);
+    }
+}
+
+.box .heading {
+    padding: 64px 0;
+    background-color: #009688;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.heading i {
+    padding-right: 12px;
+}
+
+.heading>h1 {
+    letter-spacing: 4px;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.input-info label {
+    font-size: 16px;
+    padding: 12px 0 8px 0;
+}
+
+.input-info input {
+    outline: none;
+    border: 1px solid #000;
+}
+
+.submit-pay {
+    background-color: #009688;
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.exit-pay:hover,
+.btn-exit:hover,
+.submit-pay:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.help-pay {
+    text-align: right;
+}
+
+.btn-exit {
+    padding: 8px 16px;
+    background-color: #F44336;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.exit-pay i {
+    padding: 0;
+}
+
+.exit-pay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    #bar-menu {
+        display: block;
+        color: #fff;
+    }
+    .header-Idown,
+    #bar-search {
+        display: none;
+    }
+    .nav-header {
+        overflow: hidden;
+    }
+    .btn-search:hover {
+        background-color: #ccc;
+        color: #000;
+    }
+    .nav-list>li {
+        display: block;
+    }
+    .warp-input {
+        margin: 0;
+    }
+    .warp-card {
+        padding: 0 15px;
+    }
+    .slider-heading {
+        display: none
+    }
+}
